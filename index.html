@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+	</head>
+	<body>
+		<div class="center" id="game">
+			<div class="box center-box">
+				
+				<!-- start button -->
+				<div class="box start">
+					<span id="start">Start</span>
+				</div>
+				
+				<!-- levels -->
+				<div class="box">
+					<div class="levels">
+						<span class="level active" data-level="0">1</span>
+						<span class="level" data-level="1">2</span>
+						<span class="level" data-level="2">3</span>
+						<span class="level" data-level="3">4</span>
+						<span class="level" data-level="4">5</span>
+					</div>
+				</div>
+				
+				<!-- labels -->
+				<div class="box hidden" id="labels">
+					<p>
+						Goal: <span id="goal"></span>
+						Score: <span id="score"></span>
+					</p>					
+				</div>
+				
+				<!-- buttons -->
+				<div class="box">
+					<div class="hidden" id="choose-numbers">Choose <span></span> numbers:</div>
+					<div class="hidden" id="buttons"></div>
+				</div>
+				
+				<!-- results -->
+				<div class="box hidden" id="msg">
+					<p class="win hidden blink">Great Job</p>
+					<p class="losing hidden">loss</p>
+				</div>
+				
+				<!-- time -->
+				<div class="box hidden" id="time">
+					<p>
+						<span id="seconds">0</span> second(s) left
+					</p>
+				
+				</div>	
+			</div>
+		</div>
+		
+		<script src="js/default.js"></script>
+	</body>
+</html>
